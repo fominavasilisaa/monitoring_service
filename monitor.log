@@ -1,0 +1,39 @@
+2026-10-13 22:48:46,287 [INFO] Мониторинговый сервис запускается. Первый цикл выполняется сразу.
+2026-10-13 22:48:52,225 [INFO] parsers.ranepa: получено записей 27
+2026-10-13 22:49:53,341 [INFO] parsers.reu: получено записей 111
+2026-10-13 22:50:08,507 [INFO] parsers.mai: получено записей 0
+2026-10-13 22:50:08,540 [INFO] Цикл завершён: просмотрено 138 записей, добавлено уникальных 138
+2026-10-13 22:50:08,547 [INFO] send_list.txt обновлён: новых новостей 138, получателей 4
+2026-10-13 22:50:08,547 [INFO] Следующий запуск через 58.6 минут
+2026-10-13 22:50:39,176 [INFO] Работа остановлена пользователем (Ctrl+C).
+2026-10-13 22:52:47,139 [INFO] Мониторинговый сервис запускается. Первый цикл выполняется сразу.
+2026-10-13 22:53:16,266 [INFO] parsers.ranepa: получено записей 27
+2026-10-13 22:54:09,965 [INFO] parsers.reu: получено записей 111
+2026-10-13 22:54:24,982 [INFO] parsers.mai: получено записей 0
+2026-10-13 22:54:25,008 [INFO] Цикл завершён: просмотрено 138 записей, добавлено уникальных 0
+2026-10-13 22:54:25,012 [INFO] send_list.txt обновлён: новых новостей 0, получателей 0
+2026-10-13 22:54:25,012 [INFO] Следующий запуск через 58.4 минут
+2026-10-13 23:36:08,619 [INFO] Работа остановлена пользователем (Ctrl+C).
+2026-10-14 13:22:41,040 [INFO] Мониторинговый сервис запускается. Первый цикл выполняется сразу.
+2026-10-14 13:22:44,632 [INFO] parsers.ranepa: получено записей 0
+2026-10-14 13:24:02,257 [INFO] parsers.reu: получено записей 111
+2026-10-14 13:24:02,281 [ERROR] Ошибка парсера parsers.mai; остальные парсеры продолжат работу
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\учеба\python_analysis\unimon\main.py", line 45, in run_parsers
+    module = importlib.import_module(module_name)
+  File "C:\Users\User\AppData\Local\Python\pythoncore-3.14-64\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\User\Desktop\учеба\python_analysis\unimon\parsers\mai.py", line 5, in <module>
+    from parsers.common import normalize_date, guess_category
+ImportError: cannot import name 'guess_category' from 'parsers.common' (C:\Users\User\Desktop\учеба\python_analysis\unimon\parsers\common.py)
+2026-10-14 13:24:02,318 [INFO] Цикл завершён: просмотрено 111 записей, добавлено уникальных 2
+2026-10-14 13:24:02,324 [INFO] send_list.txt обновлён: новых новостей 2, получателей 1
+2026-10-14 13:24:02,326 [INFO] Следующий запуск через 58.6 минут
+2026-10-14 13:24:07,675 [INFO] Работа остановлена пользователем (Ctrl+C).
